@@ -1,0 +1,1066 @@
+[
+ {
+  "id": "PSI-1",
+  "group": "G-PSI-1",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1182
+ },
+ {
+  "id": "PSI-2",
+  "group": "G-PSI-2",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1214
+ },
+ {
+  "id": "PSI-3",
+  "group": "G-PSI-3",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1212
+ },
+ {
+  "id": "PSI-4",
+  "group": "G-PSI-4",
+  "fold": 0,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1446
+ },
+ {
+  "id": "PSI-5",
+  "group": "G-PSI-5",
+  "fold": 4,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1315
+ },
+ {
+  "id": "PSI-6",
+  "group": "G-PSI-6",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1339
+ },
+ {
+  "id": "PSI-7",
+  "group": "G-PSI-7",
+  "fold": 2,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1195
+ },
+ {
+  "id": "PSI-8",
+  "group": "G-PSI-8",
+  "fold": 3,
+  "label": "Biophysics",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1407
+ },
+ {
+  "id": "PSI-9",
+  "group": "G-PSI-9",
+  "fold": 1,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1146
+ },
+ {
+  "id": "PSI-10",
+  "group": "G-PSI-10",
+  "fold": 2,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5023
+ },
+ {
+  "id": "PSI-12",
+  "group": "G-PSI-12",
+  "fold": 2,
+  "label": "Biophysics",
+  "predicted": "Biophysics",
+  "p_combustion": 0.0854
+ },
+ {
+  "id": "PSI-13",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1166
+ },
+ {
+  "id": "PSI-15",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1078
+ },
+ {
+  "id": "PSI-16",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1099
+ },
+ {
+  "id": "PSI-17",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1072
+ },
+ {
+  "id": "PSI-18",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1021
+ },
+ {
+  "id": "PSI-19",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0888
+ },
+ {
+  "id": "PSI-20",
+  "group": "G-PSI-10",
+  "fold": 2,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5972
+ },
+ {
+  "id": "PSI-21",
+  "group": "G-PSI-10",
+  "fold": 2,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5477
+ },
+ {
+  "id": "PSI-22",
+  "group": "G-PSI-10",
+  "fold": 2,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.4904
+ },
+ {
+  "id": "PSI-23",
+  "group": "G-PSI-10",
+  "fold": 2,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5598
+ },
+ {
+  "id": "PSI-24",
+  "group": "G-PSI-24",
+  "fold": 2,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1489
+ },
+ {
+  "id": "PSI-25",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5462
+ },
+ {
+  "id": "PSI-26",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5404
+ },
+ {
+  "id": "PSI-27",
+  "group": "G-PSI-27",
+  "fold": 2,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0875
+ },
+ {
+  "id": "PSI-28",
+  "group": "G-PSI-27",
+  "fold": 2,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0966
+ },
+ {
+  "id": "PSI-29",
+  "group": "G-PSI-27",
+  "fold": 2,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.099
+ },
+ {
+  "id": "PSI-30",
+  "group": "G-PSI-27",
+  "fold": 2,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0862
+ },
+ {
+  "id": "PSI-31",
+  "group": "G-PSI-31",
+  "fold": 4,
+  "label": "Fundamental Physics",
+  "predicted": "Fundamental Physics",
+  "p_combustion": 0.0954
+ },
+ {
+  "id": "PSI-32",
+  "group": "G-PSI-31",
+  "fold": 4,
+  "label": "Fundamental Physics",
+  "predicted": "Fundamental Physics",
+  "p_combustion": 0.0783
+ },
+ {
+  "id": "PSI-33",
+  "group": "G-PSI-31",
+  "fold": 4,
+  "label": "Fundamental Physics",
+  "predicted": "Fundamental Physics",
+  "p_combustion": 0.0972
+ },
+ {
+  "id": "PSI-34",
+  "group": "G-PSI-31",
+  "fold": 4,
+  "label": "Fundamental Physics",
+  "predicted": "Fundamental Physics",
+  "p_combustion": 0.1563
+ },
+ {
+  "id": "PSI-35",
+  "group": "G-PSI-31",
+  "fold": 4,
+  "label": "Fundamental Physics",
+  "predicted": "Fundamental Physics",
+  "p_combustion": 0.0867
+ },
+ {
+  "id": "PSI-36",
+  "group": "G-PSI-31",
+  "fold": 4,
+  "label": "Fundamental Physics",
+  "predicted": "Fundamental Physics",
+  "p_combustion": 0.0925
+ },
+ {
+  "id": "PSI-37",
+  "group": "G-PSI-37",
+  "fold": 0,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.141
+ },
+ {
+  "id": "PSI-38",
+  "group": "G-PSI-37",
+  "fold": 0,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1184
+ },
+ {
+  "id": "PSI-39",
+  "group": "G-PSI-39",
+  "fold": 3,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5089
+ },
+ {
+  "id": "PSI-40",
+  "group": "G-PSI-40",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1461
+ },
+ {
+  "id": "PSI-41",
+  "group": "G-PSI-40",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1402
+ },
+ {
+  "id": "PSI-42",
+  "group": "G-PSI-40",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1181
+ },
+ {
+  "id": "PSI-43",
+  "group": "G-PSI-40",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1183
+ },
+ {
+  "id": "PSI-44",
+  "group": "G-PSI-40",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.147
+ },
+ {
+  "id": "PSI-45",
+  "group": "G-PSI-45",
+  "fold": 2,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1387
+ },
+ {
+  "id": "PSI-46",
+  "group": "G-PSI-45",
+  "fold": 2,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1396
+ },
+ {
+  "id": "PSI-47",
+  "group": "G-PSI-47",
+  "fold": 4,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.1996
+ },
+ {
+  "id": "PSI-48",
+  "group": "G-PSI-48",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.098
+ },
+ {
+  "id": "PSI-49",
+  "group": "G-PSI-48",
+  "fold": 1,
+  "label": "Fluid Physics",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0999
+ },
+ {
+  "id": "PSI-50",
+  "group": "G-PSI-50",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1463
+ },
+ {
+  "id": "PSI-51",
+  "group": "G-PSI-3",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.0926
+ },
+ {
+  "id": "PSI-52",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0873
+ },
+ {
+  "id": "PSI-57",
+  "group": "G-PSI-57",
+  "fold": 3,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1396
+ },
+ {
+  "id": "PSI-58",
+  "group": "G-PSI-57",
+  "fold": 3,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1309
+ },
+ {
+  "id": "PSI-59",
+  "group": "G-PSI-57",
+  "fold": 3,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1552
+ },
+ {
+  "id": "PSI-60",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.4867
+ },
+ {
+  "id": "PSI-62",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.44
+ },
+ {
+  "id": "PSI-64",
+  "group": "G-PSI-48",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.0824
+ },
+ {
+  "id": "PSI-66",
+  "group": "G-PSI-66",
+  "fold": 3,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1271
+ },
+ {
+  "id": "PSI-67",
+  "group": "G-PSI-67",
+  "fold": 4,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1139
+ },
+ {
+  "id": "PSI-68",
+  "group": "G-PSI-39",
+  "fold": 3,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.4485
+ },
+ {
+  "id": "PSI-69",
+  "group": "G-PSI-39",
+  "fold": 3,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5988
+ },
+ {
+  "id": "PSI-70",
+  "group": "G-PSI-70",
+  "fold": 0,
+  "label": "Fluid Physics",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1303
+ },
+ {
+  "id": "PSI-71",
+  "group": "G-PSI-71",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.112
+ },
+ {
+  "id": "PSI-72",
+  "group": "G-PSI-71",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1136
+ },
+ {
+  "id": "PSI-73",
+  "group": "G-PSI-71",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1096
+ },
+ {
+  "id": "PSI-74",
+  "group": "G-PSI-74",
+  "fold": 1,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0847
+ },
+ {
+  "id": "PSI-75",
+  "group": "G-PSI-74",
+  "fold": 1,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1003
+ },
+ {
+  "id": "PSI-76",
+  "group": "G-PSI-74",
+  "fold": 1,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1012
+ },
+ {
+  "id": "PSI-77",
+  "group": "G-PSI-77",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1553
+ },
+ {
+  "id": "PSI-78",
+  "group": "G-PSI-78",
+  "fold": 3,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1556
+ },
+ {
+  "id": "PSI-79",
+  "group": "G-PSI-79",
+  "fold": 0,
+  "label": "Biophysics",
+  "predicted": "Biophysics",
+  "p_combustion": 0.06
+ },
+ {
+  "id": "PSI-80",
+  "group": "G-PSI-79",
+  "fold": 0,
+  "label": "Biophysics",
+  "predicted": "Biophysics",
+  "p_combustion": 0.0707
+ },
+ {
+  "id": "PSI-81",
+  "group": "G-PSI-50",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1436
+ },
+ {
+  "id": "PSI-82",
+  "group": "G-PSI-82",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1107
+ },
+ {
+  "id": "PSI-83",
+  "group": "G-PSI-83",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1524
+ },
+ {
+  "id": "PSI-84",
+  "group": "G-PSI-83",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1289
+ },
+ {
+  "id": "PSI-85",
+  "group": "G-PSI-50",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1243
+ },
+ {
+  "id": "PSI-86",
+  "group": "G-PSI-86",
+  "fold": 4,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1106
+ },
+ {
+  "id": "PSI-87",
+  "group": "G-PSI-87",
+  "fold": 2,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1494
+ },
+ {
+  "id": "PSI-88",
+  "group": "G-PSI-88",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1539
+ },
+ {
+  "id": "PSI-89",
+  "group": "G-PSI-88",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1613
+ },
+ {
+  "id": "PSI-90",
+  "group": "G-PSI-88",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1628
+ },
+ {
+  "id": "PSI-91",
+  "group": "G-PSI-91",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.092
+ },
+ {
+  "id": "PSI-93",
+  "group": "G-PSI-93",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1176
+ },
+ {
+  "id": "PSI-94",
+  "group": "G-PSI-91",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0983
+ },
+ {
+  "id": "PSI-95",
+  "group": "G-PSI-5",
+  "fold": 4,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1265
+ },
+ {
+  "id": "PSI-96",
+  "group": "G-PSI-96",
+  "fold": 4,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1152
+ },
+ {
+  "id": "PSI-97",
+  "group": "G-PSI-97",
+  "fold": 4,
+  "label": "Biophysics",
+  "predicted": "Biophysics",
+  "p_combustion": 0.1211
+ },
+ {
+  "id": "PSI-98",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.4438
+ },
+ {
+  "id": "PSI-99",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.3988
+ },
+ {
+  "id": "PSI-100",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.4371
+ },
+ {
+  "id": "PSI-101",
+  "group": "G-PSI-47",
+  "fold": 4,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.2439
+ },
+ {
+  "id": "PSI-102",
+  "group": "G-PSI-47",
+  "fold": 4,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.2725
+ },
+ {
+  "id": "PSI-103",
+  "group": "G-PSI-66",
+  "fold": 3,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1189
+ },
+ {
+  "id": "PSI-105",
+  "group": "G-PSI-66",
+  "fold": 3,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1274
+ },
+ {
+  "id": "PSI-106",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.6609
+ },
+ {
+  "id": "PSI-107",
+  "group": "G-PSI-25",
+  "fold": 1,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5674
+ },
+ {
+  "id": "PSI-108",
+  "group": "G-PSI-108",
+  "fold": 1,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1379
+ },
+ {
+  "id": "PSI-109",
+  "group": "G-PSI-108",
+  "fold": 1,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1492
+ },
+ {
+  "id": "PSI-110",
+  "group": "G-PSI-110",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1454
+ },
+ {
+  "id": "PSI-111",
+  "group": "G-PSI-111",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1336
+ },
+ {
+  "id": "PSI-112",
+  "group": "G-PSI-112",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1157
+ },
+ {
+  "id": "PSI-113",
+  "group": "G-PSI-112",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1121
+ },
+ {
+  "id": "PSI-114",
+  "group": "G-PSI-114",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.0929
+ },
+ {
+  "id": "PSI-115",
+  "group": "G-PSI-47",
+  "fold": 4,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.2372
+ },
+ {
+  "id": "PSI-117",
+  "group": "G-PSI-39",
+  "fold": 3,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.3354
+ },
+ {
+  "id": "PSI-119",
+  "group": "G-PSI-108",
+  "fold": 1,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1364
+ },
+ {
+  "id": "PSI-125",
+  "group": "G-PSI-79",
+  "fold": 0,
+  "label": "Biophysics",
+  "predicted": "Biophysics",
+  "p_combustion": 0.0826
+ },
+ {
+  "id": "PSI-137",
+  "group": "G-PSI-27",
+  "fold": 2,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1116
+ },
+ {
+  "id": "PSI-138",
+  "group": "G-PSI-50",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.143
+ },
+ {
+  "id": "PSI-142",
+  "group": "G-PSI-39",
+  "fold": 3,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.5066
+ },
+ {
+  "id": "PSI-148",
+  "group": "G-PSI-148",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.12
+ },
+ {
+  "id": "PSI-153",
+  "group": "G-PSI-153",
+  "fold": 0,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1167
+ },
+ {
+  "id": "PSI-159",
+  "group": "G-PSI-10",
+  "fold": 2,
+  "label": "Combustion Science",
+  "predicted": "Combustion Science",
+  "p_combustion": 0.4744
+ },
+ {
+  "id": "PSI-160",
+  "group": "G-PSI-97",
+  "fold": 4,
+  "label": "Biophysics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1191
+ },
+ {
+  "id": "PSI-165",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1182
+ },
+ {
+  "id": "PSI-166",
+  "group": "G-PSI-3",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1051
+ },
+ {
+  "id": "PSI-167",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.0946
+ },
+ {
+  "id": "PSI-168",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1077
+ },
+ {
+  "id": "PSI-169",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.105
+ },
+ {
+  "id": "PSI-174",
+  "group": "G-PSI-174",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1355
+ },
+ {
+  "id": "PSI-177",
+  "group": "G-PSI-74",
+  "fold": 1,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1016
+ },
+ {
+  "id": "PSI-178",
+  "group": "G-PSI-1",
+  "fold": 1,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1023
+ },
+ {
+  "id": "PSI-179",
+  "group": "G-PSI-179",
+  "fold": 4,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1631
+ },
+ {
+  "id": "PSI-181",
+  "group": "G-PSI-77",
+  "fold": 2,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1436
+ },
+ {
+  "id": "PSI-182",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1111
+ },
+ {
+  "id": "PSI-184",
+  "group": "G-PSI-184",
+  "fold": 4,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.153
+ },
+ {
+  "id": "PSI-185",
+  "group": "G-PSI-40",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.145
+ },
+ {
+  "id": "PSI-186",
+  "group": "G-PSI-186",
+  "fold": 0,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1097
+ },
+ {
+  "id": "PSI-187",
+  "group": "G-PSI-187",
+  "fold": 0,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1382
+ },
+ {
+  "id": "PSI-188",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1011
+ },
+ {
+  "id": "PSI-189",
+  "group": "G-PSI-189",
+  "fold": 1,
+  "label": "Fluid Physics",
+  "predicted": "Fluid Physics",
+  "p_combustion": 0.1346
+ },
+ {
+  "id": "PSI-190",
+  "group": "G-PSI-190",
+  "fold": 3,
+  "label": "Materials Science",
+  "predicted": "Materials Science",
+  "p_combustion": 0.1085
+ },
+ {
+  "id": "PSI-191",
+  "group": "G-PSI-13",
+  "fold": 0,
+  "label": "Complex Fluids - Soft Matter",
+  "predicted": "Complex Fluids - Soft Matter",
+  "p_combustion": 0.1349
+ }
+]
