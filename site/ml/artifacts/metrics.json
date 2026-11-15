@@ -1,0 +1,567 @@
+{
+ "trained_utc": "2026-11-14T05:09:37+00:00",
+ "dataset_sha256": "bc7a330adc3b468018c3dea8f73a5afe3ee929600df42e0a765cc0727e24516d",
+ "n_investigations": 133,
+ "n_leakage_groups": 55,
+ "label_counts": {
+  "Biophysics": 7,
+  "Combustion Science": 24,
+  "Complex Fluids - Soft Matter": 34,
+  "Fluid Physics": 27,
+  "Fundamental Physics": 6,
+  "Materials Science": 35
+ },
+ "cv": {
+  "folds": 5,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "grouping": "connected components of 'Related Investigations'"
+ },
+ "results": {
+  "majority": {
+   "summary": {
+    "accuracy": {
+     "mean": 0.118,
+     "sd_across_seeds": 0.031
+    },
+    "macro_f1": {
+     "mean": 0.052,
+     "sd_across_seeds": 0.007
+    },
+    "combustion_accuracy": {
+     "mean": 0.82,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_auc": {
+     "mean": 0.5,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_ap": {
+     "mean": 0.196,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_precision": {
+     "mean": 0.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_recall": {
+     "mean": 0.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_f1": {
+     "mean": 0.0,
+     "sd_across_seeds": 0.0
+    }
+   },
+   "per_seed": [
+    {
+     "seed": 0,
+     "accuracy": 0.14285714285714285,
+     "macro_f1": 0.05760491847099706,
+     "combustion_accuracy": 0.8195488721804511,
+     "combustion_auc": 0.5,
+     "combustion_ap": 0.19625954580619884,
+     "combustion_precision": 0.0,
+     "combustion_recall": 0.0,
+     "combustion_f1": 0.0
+    },
+    {
+     "seed": 1,
+     "accuracy": 0.08270676691729323,
+     "macro_f1": 0.0441680960548885,
+     "combustion_accuracy": 0.8195488721804511,
+     "combustion_auc": 0.5,
+     "combustion_ap": 0.19625954580619884,
+     "combustion_precision": 0.0,
+     "combustion_recall": 0.0,
+     "combustion_f1": 0.0
+    },
+    {
+     "seed": 2,
+     "accuracy": 0.12781954887218044,
+     "macro_f1": 0.053163211057947905,
+     "combustion_accuracy": 0.8195488721804511,
+     "combustion_auc": 0.5,
+     "combustion_ap": 0.19625954580619884,
+     "combustion_precision": 0.0,
+     "combustion_recall": 0.0,
+     "combustion_f1": 0.0
+    }
+   ]
+  },
+  "naive_bayes": {
+   "summary": {
+    "accuracy": {
+     "mean": 0.752,
+     "sd_across_seeds": 0.027
+    },
+    "macro_f1": {
+     "mean": 0.538,
+     "sd_across_seeds": 0.021
+    },
+    "combustion_accuracy": {
+     "mean": 0.962,
+     "sd_across_seeds": 0.008
+    },
+    "combustion_auc": {
+     "mean": 0.993,
+     "sd_across_seeds": 0.01
+    },
+    "combustion_ap": {
+     "mean": 0.977,
+     "sd_across_seeds": 0.028
+    },
+    "combustion_precision": {
+     "mean": 0.967,
+     "sd_across_seeds": 0.028
+    },
+    "combustion_recall": {
+     "mean": 0.819,
+     "sd_across_seeds": 0.024
+    },
+    "combustion_f1": {
+     "mean": 0.887,
+     "sd_across_seeds": 0.023
+    }
+   },
+   "per_seed": [
+    {
+     "seed": 0,
+     "accuracy": 0.7744360902255639,
+     "macro_f1": 0.5534391534391535,
+     "combustion_accuracy": 0.9624060150375939,
+     "combustion_auc": 0.9969418960244648,
+     "combustion_ap": 0.9850927843133218,
+     "combustion_precision": 0.9523809523809523,
+     "combustion_recall": 0.8333333333333334,
+     "combustion_f1": 0.888888888888889
+    },
+    {
+     "seed": 1,
+     "accuracy": 0.7218045112781954,
+     "macro_f1": 0.5144679881521986,
+     "combustion_accuracy": 0.9548872180451128,
+     "combustion_auc": 0.981651376146789,
+     "combustion_ap": 0.9456630175380177,
+     "combustion_precision": 0.95,
+     "combustion_recall": 0.7916666666666666,
+     "combustion_f1": 0.8636363636363635
+    },
+    {
+     "seed": 2,
+     "accuracy": 0.7593984962406015,
+     "macro_f1": 0.5467641247890658,
+     "combustion_accuracy": 0.9699248120300752,
+     "combustion_auc": 1.0,
+     "combustion_ap": 1.0,
+     "combustion_precision": 1.0,
+     "combustion_recall": 0.8333333333333334,
+     "combustion_f1": 0.9090909090909091
+    }
+   ]
+  },
+  "softmax_regression": {
+   "summary": {
+    "accuracy": {
+     "mean": 0.852,
+     "sd_across_seeds": 0.017
+    },
+    "macro_f1": {
+     "mean": 0.691,
+     "sd_across_seeds": 0.024
+    },
+    "combustion_accuracy": {
+     "mean": 0.98,
+     "sd_across_seeds": 0.004
+    },
+    "combustion_auc": {
+     "mean": 0.998,
+     "sd_across_seeds": 0.002
+    },
+    "combustion_ap": {
+     "mean": 0.993,
+     "sd_across_seeds": 0.008
+    },
+    "combustion_precision": {
+     "mean": 0.971,
+     "sd_across_seeds": 0.025
+    },
+    "combustion_recall": {
+     "mean": 0.917,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_f1": {
+     "mean": 0.943,
+     "sd_across_seeds": 0.012
+    }
+   },
+   "per_seed": [
+    {
+     "seed": 0,
+     "accuracy": 0.8421052631578947,
+     "macro_f1": 0.6630958053420931,
+     "combustion_accuracy": 0.9774436090225563,
+     "combustion_auc": 0.9988532110091743,
+     "combustion_ap": 0.9947856280193236,
+     "combustion_precision": 0.9565217391304348,
+     "combustion_recall": 0.9166666666666666,
+     "combustion_f1": 0.9361702127659574
+    },
+    {
+     "seed": 1,
+     "accuracy": 0.8721804511278195,
+     "macro_f1": 0.7046669536507287,
+     "combustion_accuracy": 0.9774436090225563,
+     "combustion_auc": 0.9957951070336392,
+     "combustion_ap": 0.9835640215606483,
+     "combustion_precision": 0.9565217391304348,
+     "combustion_recall": 0.9166666666666666,
+     "combustion_f1": 0.9361702127659574
+    },
+    {
+     "seed": 2,
+     "accuracy": 0.8421052631578947,
+     "macro_f1": 0.705259944169303,
+     "combustion_accuracy": 0.9849624060150376,
+     "combustion_auc": 1.0,
+     "combustion_ap": 1.0,
+     "combustion_precision": 1.0,
+     "combustion_recall": 0.9166666666666666,
+     "combustion_f1": 0.9565217391304348
+    }
+   ]
+  },
+  "softmax_regression_plus_taskbook": {
+   "summary": {
+    "accuracy": {
+     "mean": 0.945,
+     "sd_across_seeds": 0.004
+    },
+    "macro_f1": {
+     "mean": 0.939,
+     "sd_across_seeds": 0.003
+    },
+    "combustion_accuracy": {
+     "mean": 1.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_auc": {
+     "mean": 1.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_ap": {
+     "mean": 1.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_precision": {
+     "mean": 1.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_recall": {
+     "mean": 1.0,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_f1": {
+     "mean": 1.0,
+     "sd_across_seeds": 0.0
+    },
+    "external_rows_dropped_per_fold": {
+     "mean": 52.8,
+     "max": 71
+    }
+   },
+   "per_seed": [
+    {
+     "seed": 0,
+     "accuracy": 0.9473684210526315,
+     "macro_f1": 0.9408289241622575,
+     "combustion_accuracy": 1.0,
+     "combustion_auc": 1.0,
+     "combustion_ap": 1.0,
+     "combustion_precision": 1.0,
+     "combustion_recall": 1.0,
+     "combustion_f1": 1.0
+    },
+    {
+     "seed": 1,
+     "accuracy": 0.9473684210526315,
+     "macro_f1": 0.9408289241622575,
+     "combustion_accuracy": 1.0,
+     "combustion_auc": 1.0,
+     "combustion_ap": 1.0,
+     "combustion_precision": 1.0,
+     "combustion_recall": 1.0,
+     "combustion_f1": 1.0
+    },
+    {
+     "seed": 2,
+     "accuracy": 0.9398496240601504,
+     "macro_f1": 0.9360621593220082,
+     "combustion_accuracy": 1.0,
+     "combustion_auc": 1.0,
+     "combustion_ap": 1.0,
+     "combustion_precision": 1.0,
+     "combustion_recall": 1.0,
+     "combustion_f1": 1.0
+    }
+   ],
+   "external_rows": 673,
+   "external_label_counts": {
+    "Biophysics": 44,
+    "Combustion Science": 138,
+    "Complex Fluids - Soft Matter": 79,
+    "Fluid Physics": 168,
+    "Fundamental Physics": 107,
+    "Materials Science": 137
+   }
+  },
+  "softmax_regression_no_keywords": {
+   "summary": {
+    "accuracy": {
+     "mean": 0.84,
+     "sd_across_seeds": 0.016
+    },
+    "macro_f1": {
+     "mean": 0.658,
+     "sd_across_seeds": 0.031
+    },
+    "combustion_accuracy": {
+     "mean": 0.972,
+     "sd_across_seeds": 0.004
+    },
+    "combustion_auc": {
+     "mean": 0.996,
+     "sd_across_seeds": 0.005
+    },
+    "combustion_ap": {
+     "mean": 0.987,
+     "sd_across_seeds": 0.015
+    },
+    "combustion_precision": {
+     "mean": 0.97,
+     "sd_across_seeds": 0.026
+    },
+    "combustion_recall": {
+     "mean": 0.875,
+     "sd_across_seeds": 0.0
+    },
+    "combustion_f1": {
+     "mean": 0.92,
+     "sd_across_seeds": 0.012
+    }
+   },
+   "per_seed": [
+    {
+     "seed": 0,
+     "accuracy": 0.8270676691729323,
+     "macro_f1": 0.6227179218609873,
+     "combustion_accuracy": 0.9699248120300752,
+     "combustion_auc": 0.9980886850152905,
+     "combustion_ap": 0.9913532270869226,
+     "combustion_precision": 0.9545454545454546,
+     "combustion_recall": 0.875,
+     "combustion_f1": 0.9130434782608695
+    },
+    {
+     "seed": 1,
+     "accuracy": 0.8571428571428571,
+     "macro_f1": 0.6708324020409503,
+     "combustion_accuracy": 0.9699248120300752,
+     "combustion_auc": 0.9904434250764526,
+     "combustion_ap": 0.9699169394291346,
+     "combustion_precision": 0.9545454545454546,
+     "combustion_recall": 0.875,
+     "combustion_f1": 0.9130434782608695
+    },
+    {
+     "seed": 2,
+     "accuracy": 0.8345864661654135,
+     "macro_f1": 0.680651486401012,
+     "combustion_accuracy": 0.9774436090225563,
+     "combustion_auc": 0.9996177370030581,
+     "combustion_ap": 0.9983333333333334,
+     "combustion_precision": 1.0,
+     "combustion_recall": 0.875,
+     "combustion_f1": 0.9333333333333333
+    }
+   ]
+  }
+ },
+ "deployed_model": "softmax_regression_plus_taskbook",
+ "deployed_model_detail": {
+  "per_class": {
+   "Biophysics": {
+    "precision": 1.0,
+    "recall": 0.714,
+    "f1": 0.833,
+    "support": 7
+   },
+   "Combustion Science": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 24
+   },
+   "Complex Fluids - Soft Matter": {
+    "precision": 0.892,
+    "recall": 0.971,
+    "f1": 0.93,
+    "support": 34
+   },
+   "Fluid Physics": {
+    "precision": 0.926,
+    "recall": 0.926,
+    "f1": 0.926,
+    "support": 27
+   },
+   "Fundamental Physics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 6
+   },
+   "Materials Science": {
+    "precision": 0.941,
+    "recall": 0.914,
+    "f1": 0.928,
+    "support": 35
+   }
+  },
+  "confusion_matrix_rows_true_cols_pred": {
+   "Biophysics": {
+    "Biophysics": 5,
+    "Combustion Science": 0,
+    "Complex Fluids - Soft Matter": 0,
+    "Fluid Physics": 1,
+    "Fundamental Physics": 0,
+    "Materials Science": 1
+   },
+   "Combustion Science": {
+    "Biophysics": 0,
+    "Combustion Science": 24,
+    "Complex Fluids - Soft Matter": 0,
+    "Fluid Physics": 0,
+    "Fundamental Physics": 0,
+    "Materials Science": 0
+   },
+   "Complex Fluids - Soft Matter": {
+    "Biophysics": 0,
+    "Combustion Science": 0,
+    "Complex Fluids - Soft Matter": 33,
+    "Fluid Physics": 0,
+    "Fundamental Physics": 0,
+    "Materials Science": 1
+   },
+   "Fluid Physics": {
+    "Biophysics": 0,
+    "Combustion Science": 0,
+    "Complex Fluids - Soft Matter": 2,
+    "Fluid Physics": 25,
+    "Fundamental Physics": 0,
+    "Materials Science": 0
+   },
+   "Fundamental Physics": {
+    "Biophysics": 0,
+    "Combustion Science": 0,
+    "Complex Fluids - Soft Matter": 0,
+    "Fluid Physics": 0,
+    "Fundamental Physics": 6,
+    "Materials Science": 0
+   },
+   "Materials Science": {
+    "Biophysics": 0,
+    "Combustion Science": 0,
+    "Complex Fluids - Soft Matter": 2,
+    "Fluid Physics": 1,
+    "Fundamental Physics": 0,
+    "Materials Science": 32
+   }
+  },
+  "bootstrap_over_investigations": {
+   "accuracy_95ci": [
+    0.895,
+    0.977
+   ],
+   "macro_f1_95ci": [
+    0.865,
+    0.979
+   ],
+   "combustion_auc_95ci": [
+    1.0,
+    1.0
+   ]
+  },
+  "seed": 2
+ },
+ "oof_errors": [
+  {
+   "id": "PSI-8",
+   "group": "G-PSI-8",
+   "fold": 3,
+   "label": "Biophysics",
+   "predicted": "Materials Science",
+   "p_combustion": 0.1407
+  },
+  {
+   "id": "PSI-44",
+   "group": "G-PSI-40",
+   "fold": 3,
+   "label": "Materials Science",
+   "predicted": "Complex Fluids - Soft Matter",
+   "p_combustion": 0.147
+  },
+  {
+   "id": "PSI-49",
+   "group": "G-PSI-48",
+   "fold": 1,
+   "label": "Fluid Physics",
+   "predicted": "Complex Fluids - Soft Matter",
+   "p_combustion": 0.0999
+  },
+  {
+   "id": "PSI-70",
+   "group": "G-PSI-70",
+   "fold": 0,
+   "label": "Fluid Physics",
+   "predicted": "Complex Fluids - Soft Matter",
+   "p_combustion": 0.1303
+  },
+  {
+   "id": "PSI-77",
+   "group": "G-PSI-77",
+   "fold": 2,
+   "label": "Materials Science",
+   "predicted": "Fluid Physics",
+   "p_combustion": 0.1553
+  },
+  {
+   "id": "PSI-105",
+   "group": "G-PSI-66",
+   "fold": 3,
+   "label": "Complex Fluids - Soft Matter",
+   "predicted": "Materials Science",
+   "p_combustion": 0.1274
+  },
+  {
+   "id": "PSI-110",
+   "group": "G-PSI-110",
+   "fold": 2,
+   "label": "Materials Science",
+   "predicted": "Complex Fluids - Soft Matter",
+   "p_combustion": 0.1454
+  },
+  {
+   "id": "PSI-160",
+   "group": "G-PSI-97",
+   "fold": 4,
+   "label": "Biophysics",
+   "predicted": "Fluid Physics",
+   "p_combustion": 0.1191
+  }
+ ],
+ "runtime_seconds": 686.3,
+ "quick": false
+}
