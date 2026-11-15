@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flame in Freefall</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2c1 4 5 5.5 5 10.5A5 5 0 0 1 7 12.5C7 9.5 9 8.5 9 6c2 1 3 3 3 5 0-3.5 0-6 0-9z" fill="currentColor"/></svg>
+    </span>
+    <div><strong>Flame in Freefall</strong><small>Evidence explorer for NASA PSI combustion &amp; spacecraft fire-safety research</small></div>
+  </div>
+  <nav id="tabs" role="tablist">
+    <button data-tab="overview" class="active">Overview</button>
+    <button data-tab="explorer">Research explorer</button>
+    <button data-tab="map">Fire safety map</button>
+    <button data-tab="runs">Test runs</button>
+    <button data-tab="assistant">Evidence assistant</button>
+    <button data-tab="scenario">Scenario evidence</button>
+    <button data-tab="compare">Compare <span id="cmpCount" class="pill">0</span></button>
+    <button data-tab="coverage">Coverage &amp; gaps</button>
+    <button data-tab="method">Methodology</button>
+    <button data-tab="demo">Demo</button>
+  </nav>
+</header>
+<div class="banner">Research discovery aid. Not a certified fire-risk calculator, flight rule or safety system. Scores show how well PSI metadata matches a query, not risk or ignition probability.</div>
+
+<main>
+<section id="tab-overview" class="tab active"></section>
+
+<section id="tab-explorer" class="tab">
+  <form id="searchForm" class="searchbar">
+    <input id="q" type="search" placeholder="e.g. flame spread over fabric with opposed airflow" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <div class="explorer">
+    <aside id="filters" class="filters"></aside>
+    <div>
+      <div id="searchMeta" class="meta"></div>
+      <div id="results"></div>
+    </div>
+  </div>
+</section>
+
+<section id="tab-map" class="tab"><div id="mapOut"></div></section>
+
+<section id="tab-runs" class="tab">
+  <form id="runsForm" class="scenario-form">
+    <label>Investigation<select name="investigation"><option value="">all</option><option value="PSI-25">BASS-II (PSI-25)</option><option value="PSI-99">SAFFIRE-II (PSI-99)</option><option value="PSI-102">SAME (PSI-102)</option></select></label>
+    <label>Material contains<input name="material" placeholder="e.g. PMMA, SIBAL, Nomex"></label>
+    <label>Initial O2 min (%)<input name="o2min" type="number" step="0.1"></label>
+    <label>Initial O2 max (%)<input name="o2max" type="number" step="0.1"></label>
+    <label>Show<select name="flagged"><option value="">all runs</option><option value="1">only flagged runs</option></select></label>
+    <button type="submit">Filter</button>
+  </form>
+  <p class="hint">Download for modelling: <a id="dlCsv" href="/api/runs.csv">all runs as CSV</a> · <a id="dlJson" href="/api/runs.json">full JSON with provenance</a> (each row keeps its source file and line, flags and outcome quote).</p>
+  <div id="runsOut"></div>
+</section>
+
+<section id="tab-assistant" class="tab">
+  <form id="askForm" class="searchbar">
+    <input id="askq" type="search" placeholder="Ask a question about PSI combustion investigations" autocomplete="off">
+    <button type="submit">Ask</button>
+  </form>
+  <p class="hint">Answers quote indexed PSI metadata and linked public NASA reports word for word, plus fixed-template summaries of parsed PSI data files, with a citation for every item. No free text is generated. If the evidence is too weak, the assistant says so.</p>
+  <div id="answer"></div>
+</section>
+
+<section id="tab-scenario" class="tab">
+  <form id="scenarioForm" class="scenario-form">
+    <label>Crew environment preset<select name="preset" id="envPreset">
+      <option value="">custom</option>
+      <option value="iss">ISS / spacecraft cabin</option>
+      <option value="moon">Moon Base</option>
+      <option value="rover">Pressurized lunar rover</option>
+      <option value="mars">Mars surface base</option>
+      <option value="earth">Earth (normal gravity)</option></select></label>
+    <label>Gravity regime
+      <select name="gravity"><option value="">any</option><option value="microgravity">microgravity</option><option value="lunar">lunar (~0.16 g)</option><option value="martian">Martian (~0.38 g)</option><option value="normal">normal (1 g)</option></select></label>
+    <label>Oxygen (%)<input name="oxygen" type="number" step="0.1" min="0" max="100" placeholder="e.g. 30"></label>
+    <label>Pressure (kPa)<input name="pressure" type="number" step="0.1" min="0" placeholder="e.g. 70"></label>
+    <label>Airflow (cm/s)<input name="airflow" type="number" step="0.1" min="0" placeholder="e.g. 10"></label>
+    <label>Material<input name="material" placeholder="e.g. nomex, pmma, cotton"></label>
+    <label>Focus terms<input name="focus" placeholder="e.g. flame spread, smoke"></label>
+    <label>Scope<select name="scope"><option value="combustion">Combustion Science records</option><option value="all">All PSI records</option></select></label>
+    <button type="submit">Find evidence</button>
+  </form>
+  <p id="presetNote" class="hint"></p>
+  <div id="scenarioOut"></div>
+</section>
+
+<section id="tab-compare" class="tab"><div id="compareOut"></div></section>
+<section id="tab-coverage" class="tab"><div id="coverageOut"></div></section>
+<section id="tab-method" class="tab"><div id="methodOut"></div></section>
+<section id="tab-demo" class="tab"><div id="demoOut"></div></section>
+</main>
+
+<div id="drawer" class="drawer" aria-hidden="true">
+  <div class="drawer-inner">
+    <button class="close" id="drawerClose" aria-label="Close">&times;</button>
+    <div id="drawerBody"></div>
+  </div>
+</div>
+<div id="pyLoading" style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(10,12,20,.92);color:#fff;font:16px system-ui,sans-serif;text-align:center;padding:24px"><div><div style="font-size:20px;font-weight:600;margin-bottom:8px">Loading the evidence engine…</div><div id="pyLoadingStep" style="opacity:.75">Starting Python in your browser (first visit takes ~20 s)</div></div></div>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="pyshim.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
