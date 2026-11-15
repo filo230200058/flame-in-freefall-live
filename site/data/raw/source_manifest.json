@@ -1,0 +1,353 @@
+{
+ "generated_from": "C:\\Users\\device\\Downloads\\nasa",
+ "archives": [
+  {
+   "file": "PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+   "exists": true,
+   "size_bytes": 13439,
+   "sha256": "629faf104a8ff0e8d335f2527c019e740380163ea7f74b8ad754ae71f7da2559",
+   "filename_psi_tokens": [
+    "PSI-25",
+    "PSI-101"
+   ],
+   "members": [
+    {
+     "name": "i_Investigation.txt",
+     "size_bytes": 13147,
+     "sha256": "ad5b3e61b34ec832d02f9f592677d8d1f2efe4f4d9380c996378190b83dca55c",
+     "zip_timestamp": "2025-07-29 06:56:16",
+     "kind": "ISA-Tab investigation metadata (narrative + descriptors)",
+     "study_identifier": "PSI-25",
+     "study_identifier_line": 33,
+     "decode_warnings": []
+    },
+    {
+     "name": "s_PSI-25.txt",
+     "size_bytes": 56,
+     "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+     "zip_timestamp": "2025-07-29 06:56:16",
+     "kind": "ISA-Tab study sample sheet - placeholder only (contains 'Do not use this'); no samples or measurements",
+     "decode_warnings": []
+    }
+   ],
+   "internal_study_identifier": "PSI-25",
+   "contains_measurements": false,
+   "content_note": "Metadata only: investigation narrative, descriptors, publications, contacts. No experimental tables, sensor data, images, or reports in this archive.",
+   "token_checks": [
+    {
+     "token": "PSI-25",
+     "equals_internal_id": true,
+     "official_acronym_for_token": "BASS-II",
+     "official_title_for_token": "Burning and Suppression of Solids - II"
+    },
+    {
+     "token": "PSI-101",
+     "equals_internal_id": false,
+     "official_acronym_for_token": "SAME-R",
+     "official_title_for_token": "Smoke Aerosol Measurement Experiment-Reflight"
+    }
+   ],
+   "official_record": {
+    "accession": "PSI-25",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "official_acronym": "BASS-II",
+    "official_title": "Burning and Suppression of Solids - II",
+    "found_in_catalog_snapshot": true
+   },
+   "filename_acronym": "BASS-II",
+   "mapping_status": "confirmed",
+   "mapping_note": "Internal Study Identifier is PSI-25. Other filename token(s) do not identify this archive: PSI-101 is a different investigation in the official catalog (SAME-R). Mapping uses the internal identifier, confirmed against https://psi.nasa.gov/physci/repo/data/investigations/PSI-25."
+  },
+  {
+   "file": "PSI-26_metadata_PSI-102_BASS.zip",
+   "exists": true,
+   "size_bytes": 11647,
+   "sha256": "1167ee239db24e7d73508b2d472e9bab9382211b596312167a2a6d24b4bcfc59",
+   "filename_psi_tokens": [
+    "PSI-26",
+    "PSI-102"
+   ],
+   "members": [
+    {
+     "name": "i_Investigation.txt",
+     "size_bytes": 11355,
+     "sha256": "7a6fc1b1ce0ac3a381da8389f4d4b89b35001ab7bc2a4bec15f0efcb3a20d63d",
+     "zip_timestamp": "2025-03-19 09:34:22",
+     "kind": "ISA-Tab investigation metadata (narrative + descriptors)",
+     "study_identifier": "PSI-26",
+     "study_identifier_line": 33,
+     "decode_warnings": []
+    },
+    {
+     "name": "s_PSI-26.txt",
+     "size_bytes": 56,
+     "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+     "zip_timestamp": "2025-03-19 09:34:22",
+     "kind": "ISA-Tab study sample sheet - placeholder only (contains 'Do not use this'); no samples or measurements",
+     "decode_warnings": []
+    }
+   ],
+   "internal_study_identifier": "PSI-26",
+   "contains_measurements": false,
+   "content_note": "Metadata only: investigation narrative, descriptors, publications, contacts. No experimental tables, sensor data, images, or reports in this archive.",
+   "token_checks": [
+    {
+     "token": "PSI-26",
+     "equals_internal_id": true,
+     "official_acronym_for_token": "BASS",
+     "official_title_for_token": "Burning and Suppression of Solids"
+    },
+    {
+     "token": "PSI-102",
+     "equals_internal_id": false,
+     "official_acronym_for_token": "SAME",
+     "official_title_for_token": "Smoke and Aerosol Measurement Experiment"
+    }
+   ],
+   "official_record": {
+    "accession": "PSI-26",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+    "official_acronym": "BASS",
+    "official_title": "Burning and Suppression of Solids",
+    "found_in_catalog_snapshot": true
+   },
+   "filename_acronym": "BASS",
+   "mapping_status": "confirmed",
+   "mapping_note": "Internal Study Identifier is PSI-26. Other filename token(s) do not identify this archive: PSI-102 is a different investigation in the official catalog (SAME). Mapping uses the internal identifier, confirmed against https://psi.nasa.gov/physci/repo/data/investigations/PSI-26."
+  },
+  {
+   "file": "PSI-68_metadata_PSI-132_FLEX-2.zip",
+   "exists": true,
+   "size_bytes": 24115,
+   "sha256": "914253706ecde55d3f497f3f081ecb2f0f0ed1a7a19136b3926d7d37848b8d78",
+   "filename_psi_tokens": [
+    "PSI-68",
+    "PSI-132"
+   ],
+   "members": [
+    {
+     "name": "i_Investigation.txt",
+     "size_bytes": 23823,
+     "sha256": "a8b2b3124c2f2fccd5e07e5941171412e66471308c4bd609ecbea207b42d0b59",
+     "zip_timestamp": "2025-04-24 09:23:04",
+     "kind": "ISA-Tab investigation metadata (narrative + descriptors)",
+     "study_identifier": "PSI-68",
+     "study_identifier_line": 33,
+     "decode_warnings": []
+    },
+    {
+     "name": "s_PSI-68.txt",
+     "size_bytes": 56,
+     "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+     "zip_timestamp": "2025-04-24 09:23:04",
+     "kind": "ISA-Tab study sample sheet - placeholder only (contains 'Do not use this'); no samples or measurements",
+     "decode_warnings": []
+    }
+   ],
+   "internal_study_identifier": "PSI-68",
+   "contains_measurements": false,
+   "content_note": "Metadata only: investigation narrative, descriptors, publications, contacts. No experimental tables, sensor data, images, or reports in this archive.",
+   "token_checks": [
+    {
+     "token": "PSI-68",
+     "equals_internal_id": true,
+     "official_acronym_for_token": "FLEX-2",
+     "official_title_for_token": "Flame Extinguishment Experiment - 2"
+    },
+    {
+     "token": "PSI-132",
+     "equals_internal_id": false,
+     "official_acronym_for_token": null,
+     "official_title_for_token": null
+    }
+   ],
+   "official_record": {
+    "accession": "PSI-68",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "official_acronym": "FLEX-2",
+    "official_title": "Flame Extinguishment Experiment - 2",
+    "found_in_catalog_snapshot": true
+   },
+   "filename_acronym": "FLEX-2",
+   "mapping_status": "confirmed",
+   "mapping_note": "Internal Study Identifier is PSI-68. Other filename token(s) do not identify this archive: PSI-132 is not in the catalog snapshot. Mapping uses the internal identifier, confirmed against https://psi.nasa.gov/physci/repo/data/investigations/PSI-68."
+  },
+  {
+   "file": "PSI-69_metadata_PSI-133_FLEX.zip",
+   "exists": true,
+   "size_bytes": 24780,
+   "sha256": "3ff0e8a61bc58e79756b4a860cdf0616889f95f03fe48536b62e600ced2c0337",
+   "filename_psi_tokens": [
+    "PSI-69",
+    "PSI-133"
+   ],
+   "members": [
+    {
+     "name": "i_Investigation.txt",
+     "size_bytes": 24488,
+     "sha256": "f425bf49ed355cc4941e5f6dde215d477f084834bd9a4bf77e8bf231cd9a7520",
+     "zip_timestamp": "2025-06-06 12:40:52",
+     "kind": "ISA-Tab investigation metadata (narrative + descriptors)",
+     "study_identifier": "PSI-69",
+     "study_identifier_line": 33,
+     "decode_warnings": []
+    },
+    {
+     "name": "s_PSI-69.txt",
+     "size_bytes": 56,
+     "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+     "zip_timestamp": "2025-06-06 12:40:50",
+     "kind": "ISA-Tab study sample sheet - placeholder only (contains 'Do not use this'); no samples or measurements",
+     "decode_warnings": []
+    }
+   ],
+   "internal_study_identifier": "PSI-69",
+   "contains_measurements": false,
+   "content_note": "Metadata only: investigation narrative, descriptors, publications, contacts. No experimental tables, sensor data, images, or reports in this archive.",
+   "token_checks": [
+    {
+     "token": "PSI-69",
+     "equals_internal_id": true,
+     "official_acronym_for_token": "FLEX",
+     "official_title_for_token": "Flame Extinguishment Experiment"
+    },
+    {
+     "token": "PSI-133",
+     "equals_internal_id": false,
+     "official_acronym_for_token": null,
+     "official_title_for_token": null
+    }
+   ],
+   "official_record": {
+    "accession": "PSI-69",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "official_acronym": "FLEX",
+    "official_title": "Flame Extinguishment Experiment",
+    "found_in_catalog_snapshot": true
+   },
+   "filename_acronym": "FLEX",
+   "mapping_status": "confirmed",
+   "mapping_note": "Internal Study Identifier is PSI-69. Other filename token(s) do not identify this archive: PSI-133 is not in the catalog snapshot. Mapping uses the internal identifier, confirmed against https://psi.nasa.gov/physci/repo/data/investigations/PSI-69."
+  },
+  {
+   "file": "PSI-98_metadata_PSI-166_SAFFIRE-I.zip",
+   "exists": true,
+   "size_bytes": 10031,
+   "sha256": "ac398e9688f2b003fdbcdcc754d0d7703a006b6fb8b7a6afa598447bb5d72d0e",
+   "filename_psi_tokens": [
+    "PSI-98",
+    "PSI-166"
+   ],
+   "members": [
+    {
+     "name": "i_Investigation.txt",
+     "size_bytes": 9739,
+     "sha256": "26c269438b45a3c8c281f66d1beec07678cdd86755e1e6401b66aeae60fe0c1d",
+     "zip_timestamp": "2025-06-03 12:17:04",
+     "kind": "ISA-Tab investigation metadata (narrative + descriptors)",
+     "study_identifier": "PSI-98",
+     "study_identifier_line": 33,
+     "decode_warnings": []
+    },
+    {
+     "name": "s_PSI-98.txt",
+     "size_bytes": 56,
+     "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+     "zip_timestamp": "2025-06-03 12:17:04",
+     "kind": "ISA-Tab study sample sheet - placeholder only (contains 'Do not use this'); no samples or measurements",
+     "decode_warnings": []
+    }
+   ],
+   "internal_study_identifier": "PSI-98",
+   "contains_measurements": false,
+   "content_note": "Metadata only: investigation narrative, descriptors, publications, contacts. No experimental tables, sensor data, images, or reports in this archive.",
+   "token_checks": [
+    {
+     "token": "PSI-98",
+     "equals_internal_id": true,
+     "official_acronym_for_token": "SAFFIRE-I",
+     "official_title_for_token": "Spacecraft Fire Safety Experiment-I"
+    },
+    {
+     "token": "PSI-166",
+     "equals_internal_id": false,
+     "official_acronym_for_token": "EML USTIP Batch 2",
+     "official_title_for_token": "Unified Support for THERMOLAB - ISS, ICOPROSOL and PARSEC"
+    }
+   ],
+   "official_record": {
+    "accession": "PSI-98",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "official_acronym": "SAFFIRE-I",
+    "official_title": "Spacecraft Fire Safety Experiment-I",
+    "found_in_catalog_snapshot": true
+   },
+   "filename_acronym": "SAFFIRE-I",
+   "mapping_status": "confirmed",
+   "mapping_note": "Internal Study Identifier is PSI-98. Other filename token(s) do not identify this archive: PSI-166 is a different investigation in the official catalog (EML USTIP Batch 2). Mapping uses the internal identifier, confirmed against https://psi.nasa.gov/physci/repo/data/investigations/PSI-98."
+  },
+  {
+   "file": "PSI-102_metadata_PSI-170_SAME.zip",
+   "exists": true,
+   "size_bytes": 13127,
+   "sha256": "809127b7c6578263dc829d8ef8b15fa98fd1626dcf9c9d44d832a48974e146c6",
+   "filename_psi_tokens": [
+    "PSI-102",
+    "PSI-170"
+   ],
+   "members": [
+    {
+     "name": "i_Investigation.txt",
+     "size_bytes": 12833,
+     "sha256": "5d5fe6b1c101b47475e783f939292c2ab28b5bbf1541ada637331478f5256138",
+     "zip_timestamp": "2025-06-02 05:46:22",
+     "kind": "ISA-Tab investigation metadata (narrative + descriptors)",
+     "study_identifier": "PSI-102",
+     "study_identifier_line": 33,
+     "decode_warnings": []
+    },
+    {
+     "name": "s_PSI-102.txt",
+     "size_bytes": 56,
+     "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+     "zip_timestamp": "2025-06-02 05:46:22",
+     "kind": "ISA-Tab study sample sheet - placeholder only (contains 'Do not use this'); no samples or measurements",
+     "decode_warnings": []
+    }
+   ],
+   "internal_study_identifier": "PSI-102",
+   "contains_measurements": false,
+   "content_note": "Metadata only: investigation narrative, descriptors, publications, contacts. No experimental tables, sensor data, images, or reports in this archive.",
+   "token_checks": [
+    {
+     "token": "PSI-102",
+     "equals_internal_id": true,
+     "official_acronym_for_token": "SAME",
+     "official_title_for_token": "Smoke and Aerosol Measurement Experiment"
+    },
+    {
+     "token": "PSI-170",
+     "equals_internal_id": false,
+     "official_acronym_for_token": null,
+     "official_title_for_token": null
+    }
+   ],
+   "official_record": {
+    "accession": "PSI-102",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+    "official_acronym": "SAME",
+    "official_title": "Smoke and Aerosol Measurement Experiment",
+    "found_in_catalog_snapshot": true
+   },
+   "filename_acronym": "SAME",
+   "mapping_status": "confirmed",
+   "mapping_note": "Internal Study Identifier is PSI-102. Other filename token(s) do not identify this archive: PSI-170 is not in the catalog snapshot. Mapping uses the internal identifier, confirmed against https://psi.nasa.gov/physci/repo/data/investigations/PSI-102."
+  }
+ ],
+ "unresolved": [],
+ "catalog_snapshot": {
+  "url": "https://psi.nasa.gov/geode-py/ws/repo/search?size=500",
+  "accessed_utc": "2026-11-13T205555Z",
+  "reported_total": 133
+ }
+}
