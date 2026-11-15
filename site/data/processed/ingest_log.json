@@ -1,0 +1,27 @@
+{
+ "generated_utc": "2026-11-13T23:08:26+00:00",
+ "warnings": [
+  "FLEX-187_ColorCamData.txt: 8 rows repeat an earlier timestamp; kept in the stored file, excluded from all statistics"
+ ],
+ "conflicts": [],
+ "counts": {
+  "records": 133,
+  "records_with_local_zip": 6,
+  "chunks": 3719,
+  "conflicts": 0,
+  "ntrs_template_sentences_dropped": 32,
+  "ntrs_reports_linked": 68,
+  "ntrs_chunks": 11906,
+  "psi_data_files_parsed": 7,
+  "bass2_outcome_tests": 126,
+  "bass2_runs_with_outcome": 126,
+  "experimental_table_runs": 146,
+  "chunks_total": 15934,
+  "warnings": 1
+ },
+ "ntrs_source": {
+  "api": "https://ntrs.nasa.gov/api/citations/search",
+  "accessed_utc": "2026-11-13T21:23:39+00:00",
+  "linking_rule": "(deliberately conservative): an NTRS citation is linked to a PSI\ninvestigation only if its title or abstract contains the investigation acronym\nas a whole token (e.g. 'BASS-II', 'FLEX-2', 'Saffire-I'; case-sensitive for\nshort or common-word acronyms such as 'SAME') or the investigation's full title\nor sub-title phrase (e.g. 'Burning Rate Emulator'), AND a combustion word\n(flame|fire|smoke|combust|burn|soot|extinction). For records\nwithout an acronym, NTRS is searched by title and a hit is linked only when\n>= 60% of the title's content words appear in the NTRS title."
+ }
+}
