@@ -1,0 +1,1575 @@
+{
+ "method": "Proxy evaluation of ranking: does adding the trained model help BM25?\n\nRelevance judgments are PROXIES derived from official PSI 'Keywords' (author\ndescriptors): query = a keyword phrase, relevant = investigations tagged with it.\nNo human relevance judgments exist yet; see docs/MODEL_CARD.md.\n\nLeakage control:\n  * the Keywords field is removed from the search index during this evaluation;\n  * for each query the classifier is re-trained WITHOUT the relevant investigations'\n    leakage groups (and without keywords as input), so it never saw those records.\n\nUsage: python ml/eval_ranking.py",
+ "n_queries": 95,
+ "relevance_source": "official PSI Keywords (proxy, not human judgments)",
+ "model_weight": 0.3,
+ "summary": {
+  "ndcg@10": {
+   "bm25": 0.64,
+   "hybrid": 0.636,
+   "diff_mean": -0.003,
+   "diff_95ci": [
+    -0.009,
+    0.001
+   ],
+   "queries_better": 3,
+   "queries_worse": 7
+  },
+  "mrr": {
+   "bm25": 0.677,
+   "hybrid": 0.672,
+   "diff_mean": -0.005,
+   "diff_95ci": [
+    -0.016,
+    0.001
+   ],
+   "queries_better": 2,
+   "queries_worse": 3
+  },
+  "p@5": {
+   "bm25": 0.345,
+   "hybrid": 0.349,
+   "diff_mean": 0.004,
+   "diff_95ci": [
+    0.0,
+    0.011
+   ],
+   "queries_better": 2,
+   "queries_worse": 0
+  },
+  "recall@10": {
+   "bm25": 0.763,
+   "hybrid": 0.763,
+   "diff_mean": 0.0,
+   "diff_95ci": [
+    0.0,
+    0.0
+   ],
+   "queries_better": 0,
+   "queries_worse": 0
+  }
+ },
+ "per_query": [
+  {
+   "query": "acme",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.45560514958746035,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.45560514958746035,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "alloys",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.21840743681816419,
+    "mrr": 0.16666666666666666,
+    "p@5": 0.0,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.23719771276929622,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "atom interferometry",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "bass",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "biophysical analysis",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.08333333333333333,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.07692307692307693,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "boiling",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.5726073975563163,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5726073975563163,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "bose-einstein condensates",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.8772153153380493,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.8772153153380493,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "bubble dynamics",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.6713860725233041,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.7039180890341347,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "buoyancy",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.06666666666666667,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.06666666666666667,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "capillary channel flow",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "capillary channels",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "capillary flow",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.8485833840018,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.8396538878217249,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "capillary flow experiment (cfe)",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "capillary forces",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.5437713091520254,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5437713091520254,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "ccf",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.6366824387328317,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.6366824387328317,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "cement",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "cfe",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.6131471927654584,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.6131471927654584,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "chemical kinetics",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.38685280723454163,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.38685280723454163,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "coarsening",
+   "n_relevant": 7,
+   "bm25": {
+    "ndcg@10": 0.9815441540827996,
+    "mrr": 1.0,
+    "p@5": 1.0,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9815441540827996,
+    "mrr": 1.0,
+    "p@5": 1.0,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "colloid",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.7668091220635322,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.75
+   },
+   "hybrid": {
+    "ndcg@10": 0.7668091220635322,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.75
+   }
+  },
+  {
+   "query": "complex plasmas",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "constant flux",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.38685280723454163,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.38685280723454163,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "crystallization",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.4632423659320675,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.4525081529734507,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "crystals",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.05,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.05,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "cygnus",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "dendrite tip velocity",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "dendritic arm",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.5640920940185894,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5640920940185894,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "dendritic growth",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.8,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.8,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "dendritic solidification",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.5109559939712153,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5109559939712153,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "density",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.23719771276929622,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.23719771276929622,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "diffusion flames",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.3191471544989227,
+    "mrr": 0.25,
+    "p@5": 0.4,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.3191471544989227,
+    "mrr": 0.25,
+    "p@5": 0.4,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "dilution",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.5706417189553201,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5706417189553201,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "directional solidification",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.7327711443782633,
+    "mrr": 0.5,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.7327711443782633,
+    "mrr": 0.5,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "droplet combustion",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.9674679834891693,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9674679834891693,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "esa",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.6131471927654584,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.6131471927654584,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "extinction limit",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "fire",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.6934264036172708,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.6934264036172708,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "fire safety",
+   "n_relevant": 8,
+   "bm25": {
+    "ndcg@10": 0.8693552534644672,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 0.875
+   },
+   "hybrid": {
+    "ndcg@10": 0.8693552534644672,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 0.875
+   }
+  },
+  {
+   "query": "flame spread",
+   "n_relevant": 5,
+   "bm25": {
+    "ndcg@10": 0.7227265726449519,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 0.6
+   },
+   "hybrid": {
+    "ndcg@10": 0.7227265726449519,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 0.6
+   }
+  },
+  {
+   "query": "flames",
+   "n_relevant": 5,
+   "bm25": {
+    "ndcg@10": 0.48522855511632257,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.4
+   },
+   "hybrid": {
+    "ndcg@10": 0.48522855511632257,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.4
+   }
+  },
+  {
+   "query": "flammability",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.5912352048230277,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5912352048230277,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "flex",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.8318724637288826,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 0.75
+   },
+   "hybrid": {
+    "ndcg@10": 0.8318724637288826,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 0.75
+   }
+  },
+  {
+   "query": "foams",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "fuels",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.42177340954886444,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.42177340954886444,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "gels",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.8854598815714874,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.8854598815714874,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "grant",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.20438239758848611,
+    "mrr": 0.14285714285714285,
+    "p@5": 0.0,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.20438239758848611,
+    "mrr": 0.14285714285714285,
+    "p@5": 0.0,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "heat flux",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "heat pipes",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "heat transfer",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.37800210039683896,
+    "mrr": 0.125,
+    "p@5": 0.0,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.37800210039683896,
+    "mrr": 0.125,
+    "p@5": 0.0,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "hydration",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "interfacial energy",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.8503449055347546,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.8503449055347546,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "ivantsov solution",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "kinetics",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.0,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.0,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "laminar diffusion flames",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.49818925746641285,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.49818925746641285,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "mabe",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "macromolecular crystals",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.6934264036172708,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.6934264036172708,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "magnetorheological (mr) fluid",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "marangoni convection",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.9178287402913374,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9178287402913374,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "marangoni flow",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.5249810332008933,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5437713091520254,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "mics",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "modeling",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.043478260869565216,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.04,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "mushy zone",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "nucleation",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.9217868789962071,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9134015924715543,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "ostwald ripening",
+   "n_relevant": 5,
+   "bm25": {
+    "ndcg@10": 0.3391602052736161,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.2
+   },
+   "hybrid": {
+    "ndcg@10": 0.3391602052736161,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.2
+   }
+  },
+  {
+   "query": "pbre",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.46927872602275644,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.3333333333333333
+   },
+   "hybrid": {
+    "ndcg@10": 0.46927872602275644,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.3333333333333333
+   }
+  },
+  {
+   "query": "pbre-2",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "pbre-wr",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.46927872602275644,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.3333333333333333
+   },
+   "hybrid": {
+    "ndcg@10": 0.46927872602275644,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.3333333333333333
+   }
+  },
+  {
+   "query": "polydispersity",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "polymers",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.3191471544989227,
+    "mrr": 0.25,
+    "p@5": 0.4,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.3191471544989227,
+    "mrr": 0.25,
+    "p@5": 0.4,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "porosity",
+   "n_relevant": 5,
+   "bm25": {
+    "ndcg@10": 0.7190641271563337,
+    "mrr": 0.5,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.7190641271563337,
+    "mrr": 0.5,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "precision quantum metrology",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.9197207891481876,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "protein crystallization",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.6182885020492784,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.6182885020492784,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "protein structure",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.48247555939075504,
+    "mrr": 0.25,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.48247555939075504,
+    "mrr": 0.25,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "psi grant",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.3152014104491349,
+    "mrr": 0.16666666666666666,
+    "p@5": 0.0,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.3084274278260313,
+    "mrr": 0.16666666666666666,
+    "p@5": 0.0,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "pulsed fields",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.6509209298071326,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.6509209298071326,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "radiation",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.8772153153380493,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.8503449055347546,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "radiative extinction",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.5173087569496825,
+    "mrr": 0.25,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.5173087569496825,
+    "mrr": 0.25,
+    "p@5": 0.2,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "rheology",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.23463936301137822,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 0.3333333333333333
+   },
+   "hybrid": {
+    "ndcg@10": 0.23463936301137822,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 0.3333333333333333
+   }
+  },
+  {
+   "query": "saffire",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "self assembly",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.0,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.0,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "self-assembly",
+   "n_relevant": 6,
+   "bm25": {
+    "ndcg@10": 0.5759669634972138,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 0.8333333333333334
+   },
+   "hybrid": {
+    "ndcg@10": 0.5759669634972138,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.4,
+    "recall@10": 0.8333333333333334
+   }
+  },
+  {
+   "query": "shearing",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.8772153153380493,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.8772153153380493,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "smoke",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.7122630665145961,
+    "mrr": 0.5,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.7122630665145961,
+    "mrr": 0.5,
+    "p@5": 0.6,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "smoldering",
+   "n_relevant": 4,
+   "bm25": {
+    "ndcg@10": 0.3903800499921017,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.25
+   },
+   "hybrid": {
+    "ndcg@10": 0.3903800499921017,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.25
+   }
+  },
+  {
+   "query": "solidification",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.15642624200758548,
+    "mrr": 0.14285714285714285,
+    "p@5": 0.0,
+    "recall@10": 0.3333333333333333
+   },
+   "hybrid": {
+    "ndcg@10": 0.15642624200758548,
+    "mrr": 0.14285714285714285,
+    "p@5": 0.0,
+    "recall@10": 0.3333333333333333
+   }
+  },
+  {
+   "query": "soot",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.6508205185601091,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.6508205185601091,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "spacecraft fire safety",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.3171937659698004,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.3171937659698004,
+    "mrr": 0.2,
+    "p@5": 0.2,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "stdce-1",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.38685280723454163,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.38685280723454163,
+    "mrr": 0.5,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  },
+  {
+   "query": "succinonitrile",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.40179981797758046,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 0.6666666666666666
+   },
+   "hybrid": {
+    "ndcg@10": 0.40179981797758046,
+    "mrr": 0.3333333333333333,
+    "p@5": 0.2,
+    "recall@10": 0.6666666666666666
+   }
+  },
+  {
+   "query": "surface combustion",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.03125,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.041666666666666664,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "surface tension",
+   "n_relevant": 3,
+   "bm25": {
+    "ndcg@10": 0.9066276098484507,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.6719882468370725,
+    "mrr": 0.5,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "synchrotron radiation",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.0,
+    "mrr": 0.0,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   },
+   "hybrid": {
+    "ndcg@10": 0.0,
+    "mrr": 0.0,
+    "p@5": 0.0,
+    "recall@10": 0.0
+   }
+  },
+  {
+   "query": "thermocapillary flow",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   },
+   "hybrid": {
+    "ndcg@10": 1.0,
+    "mrr": 1.0,
+    "p@5": 0.4,
+    "recall@10": 1.0
+   }
+  },
+  {
+   "query": "thermophysical properties",
+   "n_relevant": 6,
+   "bm25": {
+    "ndcg@10": 0.8922108454754891,
+    "mrr": 1.0,
+    "p@5": 1.0,
+    "recall@10": 0.8333333333333334
+   },
+   "hybrid": {
+    "ndcg@10": 0.8922108454754891,
+    "mrr": 1.0,
+    "p@5": 1.0,
+    "recall@10": 0.8333333333333334
+   }
+  },
+  {
+   "query": "variable gravity",
+   "n_relevant": 2,
+   "bm25": {
+    "ndcg@10": 0.6131471927654584,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   },
+   "hybrid": {
+    "ndcg@10": 0.6131471927654584,
+    "mrr": 1.0,
+    "p@5": 0.2,
+    "recall@10": 0.5
+   }
+  }
+ ],
+ "runtime_seconds": 185.8
+}
